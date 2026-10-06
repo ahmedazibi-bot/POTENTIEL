@@ -1,1 +1,14 @@
-﻿.dart_tool/`n.idea/`n.vscode/`nbuild/`n.packages`n.pub-cache/`n.pub/`nandroid/.gradle`nandroid/captures/`nandroid/app/debug`nandroid/app/profile`nandroid/app/release
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+android/
+ios/
+.idea/
+.vscode/
+*.iml
+*.log

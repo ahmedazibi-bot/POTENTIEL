@@ -1,0 +1,3 @@
+# POTENTIEL launcher icon
+
+`app_icon.png` is the 1024 × 1024 POTENTIEL launcher icon: a gold champion shield, lightning bolt, stars, and the app name on a dark tactical background. Its source generator is `tool/generate_app_icon.dart`. To regenerate the image and Android launcher sizes, run `dart run tool/generate_app_icon.dart` and then `dart run flutter_launcher_icons -f flutter_launcher_icons.yaml` from the project root. The GitHub Actions release build performs the launcher generation automatically.

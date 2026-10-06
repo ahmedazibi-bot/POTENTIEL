@@ -19,10 +19,13 @@ jobs:
         uses: subosito/flutter-action@v2 
         with: 
           channel: 'stable' 
+          cache: true
       - name: Create Android Platform 
-        run: flutter create --platforms=android . 
+        run: flutter create --platforms=android --org com.azibi --project-name potentiel .
       - name: Install Dependencies 
         run: flutter pub get 
+      - name: Generate App Icon
+        run: dart run flutter_launcher_icons -f flutter_launcher_icons.yaml
       - name: Build Android Release APK 
         run: flutter build apk --release 
       - name: Upload APK Artifact 
